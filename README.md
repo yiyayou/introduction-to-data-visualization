@@ -30,7 +30,15 @@ var thisisFalse = false;
 ## arrays:
 ```javascript
 var favoriteFoods = ["cheese pizza", "wood-fired pizza", "curry pizza", "smoked salmon pizza", "pepperoni pizza"];
+
+favoriteFoods[0]; // "cheese pizza"
+
+favoriteFoods[3]; // "smoked salmon pizza"
+
+favoriteFoods[4] = "vegan pizza";
+favoriteFoods[4] // "vegan pizza"
 ```
+
 ## objects:
 ```javascript
 var pizza = {
@@ -38,6 +46,14 @@ var pizza = {
   sauce: "tomato",
   toppings: ["pepperoni", "olives", "green pepper"]
 };
+
+pizza["cheese"]; // "mozzarela"
+pizza.cheese; // "mozzarela" (same thing!)
+
+pizza.cheese = "cheddar";
+pizza.cheese; // "cheddar";
+
+pizza.toppings[1]; // "olives"
 ```
 
 ## functions:
@@ -59,6 +75,14 @@ pizza("pepperoni");
 // "pepperoni pizza is awesome!"
 ```
 
+## loops:
+
+the for loop:  
+```javascript
+for (var i=0; i<20; i++) {
+  console.log(i);
+}
+```
 
 # GitHub overview:
 - Log in, then fork this repository.
