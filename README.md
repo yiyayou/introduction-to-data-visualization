@@ -84,6 +84,23 @@ for (var i=0; i<20; i++) {
 }
 ```
 
+while loop:
+```javascript
+var n = 0;
+ 
+while (n < 20) {
+  console.log(n);
+}
+```
+
+## equality operators:
+```javascript
+=== equals
+!== does not equal
+>= greater than or equal to
+<= less than or equal to
+```
+
 # GitHub overview:
 - Log in, then fork this repository.
 - Now, you can click on files in the list, then click edit.
