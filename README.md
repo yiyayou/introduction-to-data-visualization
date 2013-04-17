@@ -31,7 +31,7 @@ var thisisFalse = false;
 ```javascript
 var favoriteFoods = ["cheese pizza", "wood-fired pizza", "curry pizza", "smoked salmon pizza", "pepperoni pizza"];
 ```
-# objects:
+## objects:
 ```javascript
 var pizza = {
   cheese: "mozzarela",
@@ -39,3 +39,33 @@ var pizza = {
   toppings: ["pepperoni", "olives", "green pepper"]
 };
 ```
+
+# GitHub overview:
+- Log in, then fork this repository.
+
+# Today's workshop challenge:
+- Review the code used to create the line-chart example.
+- Familiarize yourself with the [Chart.js documentation](http://www.chartjs.org/docs/).
+- Create a pie chart using the following data:
+```javascript
+var data = [
+  {
+    value: 30,
+    color:"#F38630"
+  },
+  {
+    value : 50,
+    color : "#E0E4CC"
+  },
+  {
+    value : 100,
+    color : "#69D2E7"
+  }     
+]
+```
+- Save the pie chart in the pie-chart.html file.
+
+# For Thursday:
+- Find a real data set. Some examples can be found at data.seattle.gov, data.gov, datahub.io, and elsewhere.
+- Use this data set you've found to create any type of chart that Chart.js is capable of creating. Reference the [Chart.js documentation](http://www.chartjs.org/docs/).
+- Find at least one example of an awesome data visualization.
