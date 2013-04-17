@@ -44,6 +44,7 @@ var pizza = {
 - Log in, then fork this repository.
 - Now, you can click on files in the list, then click edit.
 - Changes will show up at your-username.github.io/introduction-to-data-visualization
+- Learn more about git at this awesome [try git tutorial](http://try.github.io).
 
 # Today's workshop challenge:
 - Review the code used to create the line-chart example.
