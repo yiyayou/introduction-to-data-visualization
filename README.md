@@ -40,6 +40,26 @@ var pizza = {
 };
 ```
 
+## functions:
+```javascript
+function example(){
+  return "This is an example";
+}
+
+example()
+// "This is an example"
+```
+
+```javascript
+function pizza(type){
+  return type + " pizza is awesome!";
+}
+
+pizza("pepperoni")
+// "pepperoni pizza is awesome!"
+```
+
+
 # GitHub overview:
 - Log in, then fork this repository.
 - Now, you can click on files in the list, then click edit.
