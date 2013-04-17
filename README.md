@@ -46,7 +46,7 @@ function example(){
   return "This is an example";
 }
 
-example()
+example();
 // "This is an example"
 ```
 
@@ -55,7 +55,7 @@ function pizza(type){
   return type + " pizza is awesome!";
 }
 
-pizza("pepperoni")
+pizza("pepperoni");
 // "pepperoni pizza is awesome!"
 ```
 
