@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>introToDataViz</title>
+    <meta name="description" content="data.">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./components/html5shiv/dist/html5shiv.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1><a href="/">introduction to data visualization</a></h1>
+      </div>
+    </header>
+    <main role="main">
+      <div class="container">
+        <h3>found data set example</h3>
+        <p>Find a data set online and use it to create a chart using chart.js</p>
+        <p>Use the <a href="./line-chart.html">line chart</a> as an example, and refer to the <a href="http://www.chartjs.org/docs/" target="_blank">chart.js</a> and <a href="https://developer.mozilla.org/en-US/docs/JavaScript" target="_blank">mozilla developers network</a> documentation.
+        <canvas id="myChart" width="500" height="400"></canvas>
+      </div>
+    </main>
+
+    <script src="./components/Chart.js/Chart.min.js"></script>
+
+    <script>
+      
+      // add the code for the pie chart here.
+      var data = [
+        {
+          value: 30,
+          color:"#F38630"
+        },
+        {
+          value : 50,
+          color : "#E0E4CC"
+        },
+        {
+          value : 100,
+          color : "#69D2E7"
+        }     
+      ]
+
+      var ctx = document.getElementById("myChart").getContext("2d");
+      var lineChart = new Chart(ctx).Line(data,options);
+    </script>
+  </body>
+</html>

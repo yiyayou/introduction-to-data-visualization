@@ -68,4 +68,5 @@ var data = [
 # For Thursday:
 - Find a real data set. Some examples can be found at data.seattle.gov, data.gov, datahub.io, and elsewhere.
 - Use this data set you've found to create any type of chart that Chart.js is capable of creating. Reference the [Chart.js documentation](http://www.chartjs.org/docs/).
+- Save this new chart in the day2.html file.
 - Find at least one example of an awesome data visualization.
