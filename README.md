@@ -12,13 +12,13 @@ introduction-to-data-visualization
 
 ## numbers:
 ```javascript
-var intNumber = 0; // integers
-1.5 // floats
+var intNumber = 8; // integers
+3.14 // floats
 ```
 
 ## string:
 ```javascript
-var obviously = "this is a string"; // you can tell because there are quotes around the string
+var obviously = "Pizza is awesome."; // you can tell because there are quotes around the string
 ```
 
 ## boolean:
