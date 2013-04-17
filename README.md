@@ -73,3 +73,5 @@ var data = [
 - Use this data set you've found to create any type of chart that Chart.js is capable of creating. Reference the [Chart.js documentation](http://www.chartjs.org/docs/).
 - Save this new chart in the day2.html file.
 - Find at least one example of an awesome data visualization.
+- Watch [this talk about population growth](http://www.ted.com/talks/hans_rosling_on_global_population_growth.html), note the interesting "visualizations".
+- Also watch this talk about [the beauty of data visualization](http://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization.html).
