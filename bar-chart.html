@@ -2,8 +2,6 @@
 <html>
 	<head>
 		<title>Stacked Bar Chart</title>
-		<script src="http://www.chartjs.org/assets/Chart.min.js"></script>
-		<script src="../src/Chart.StackedBar.js"></script>
 	</head>
 	<body>
 		<div style="width: 50%">
@@ -39,12 +37,10 @@
 			}
 		]
 	};
-	window.onload = function(){
 		var ctx = document.getElementById("canvas").getContext("2d");
 		window.myBar = new Chart(ctx).StackedBar(barChartData, {
 			responsive : true
 		});
-	};
 	</script>
 	</body>
 </html>
