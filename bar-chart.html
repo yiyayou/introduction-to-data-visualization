@@ -1,67 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Let me try out bar chart</title>
-    <meta name="description" content="data.">
-    <meta name="viewport" content="width=device-width">
+	<head>
+		<title>Stacked Bar Chart</title>
+		<script src="http://www.chartjs.org/assets/Chart.min.js"></script>
+		<script src="../src/Chart.StackedBar.js"></script>
+	</head>
+	<body>
+		<div style="width: 50%">
+			<canvas id="canvas" height="450" width="600"></canvas>
+		</div>
 
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./components/html5shiv/dist/html5shiv.js"></script>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <h1><a href="/">Let me try out bar chart</a></h1>
-      </div>
-    </header>
-    <main role="main">
-      <div class="container">
-        <h3>Let's play with line chart</h3>
-        <canvas id="myChart" width="500" height="400"></canvas>
-      </div>
-    </main>
-    <footer>
-      <div class="container">
-      </div>
-    </footer>
 
-    <script src="./components/Chart.js/Chart.min.js"></script>
-
-    <script>
-    var data = {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
-    datasets: [
-          {
-            label: "My First dataset",
-            fillColor: "rgba(220,220,220,0.5)",
-            strokeColor: "rgba(220,220,220,0.8)",
-            highlightFill: "rgba(220,220,220,0.75)",
-            highlightStroke: "rgba(220,220,220,1)",
-            data: [65, 59, 80, 81, 56, 55, 40]
-           },
-            {
-            label: "My Second dataset",
-            fillColor: "rgba(151,187,205,0.5)",
-            strokeColor: "rgba(151,187,205,0.8)",
-            highlightFill: "rgba(151,187,205,0.75)",
-            highlightStroke: "rgba(151,187,205,1)",
-            data: [28, 48, 40, 19, 86, 27, 90]
-           }
-        ]
-      };
-      options = {
-        
-        //Number - Spacing between each of the X value sets
-        barValueSpacing : 1,
-        
-        //Boolean - Whether to animate the chart
-        animation : true,
-        
-      }
-      var ctx = document.getElementById("myChart").getContext("2d");
-      var myStackedBarChart = new Chart(ctx).StackedBar(data, options);
-    </script>
-  </body>
+	<script>
+	var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+	var barChartData = {
+		labels : ["January","February","March","April","May","June","July"],
+		datasets : [
+			{
+				fillColor : "rgba(220,220,220,0.5)",
+				strokeColor : "rgba(220,220,220,0.8)",
+				highlightFill: "rgba(220,220,220,0.75)",
+				highlightStroke: "rgba(220,220,220,1)",
+				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+			},
+			{
+				fillColor : "rgba(151,187,205,0.5)",
+				strokeColor : "rgba(151,187,205,0.8)",
+				highlightFill : "rgba(151,187,205,0.75)",
+				highlightStroke : "rgba(151,187,205,1)",
+				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+			},
+			{
+				fillColor : "rgba(240,73,73,0.5)",
+				strokeColor : "rgba(240,73,73,0.8)",
+				highlightFill : "rgba(240,73,73,0.75)",
+				highlightStroke : "rgba(240,73,73,1)",
+				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+			}
+		]
+	};
+	window.onload = function(){
+		var ctx = document.getElementById("canvas").getContext("2d");
+		window.myBar = new Chart(ctx).StackedBar(barChartData, {
+			responsive : true
+		});
+	};
+	</script>
+	</body>
 </html>
